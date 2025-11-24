@@ -1,0 +1,17 @@
+numpy
+scipy
+pandas
+matplotlib
+gymnasium
+torch
+torchvision
+torch-geometric
+scikit-learn
+joblib
+tqdm
+networkx
+umap-learn
+stable_baselines3==2.5.0
+sb3_contrib==2.5.0
+skorch
+faker
