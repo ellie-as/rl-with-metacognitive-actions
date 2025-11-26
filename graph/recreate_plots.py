@@ -19,7 +19,7 @@ model_dirs     = [
     "FamilyTreeBuilder_results"
 ]
 
-n_runs         = 3
+n_runs         = 1
 step_positions = list(range(5))
 action_cols    = [f"action_{i}_prob" for i in range(6)]
 rolling_window = 1000 
@@ -34,19 +34,36 @@ for model_dir in model_dirs:
     reward_arr  = np.stack([r[:min_eps] for r in reward_runs], axis=0)
     episodes    = np.arange(min_eps)
 
-    mean_reward = reward_arr.mean(axis=0)
-    sem_reward  = reward_arr.std(axis=0, ddof=1) / np.sqrt(n_runs)
+    if n_runs == 1:
+        # Single-run: use rolling mean ± rolling std over episodes (matches image/maze style)
+        series_mean = pd.Series(reward_arr[0])
+        reward_mean_smooth = (
+            series_mean.rolling(window=rolling_window, center=True, min_periods=1)
+            .mean()
+            .values
+        )
+        reward_std = (
+            series_mean.rolling(window=rolling_window, center=True, min_periods=1)
+            .std(ddof=0)
+            .fillna(0.0)
+            .values
+        )
+        sem_reward_smooth = reward_std
+    else:
+        # Multi-run: across-run mean ± SEM, both smoothed over episodes
+        mean_reward = reward_arr.mean(axis=0)
+        sem_reward  = reward_arr.std(axis=0, ddof=1) / np.sqrt(n_runs)
 
-    reward_mean_smooth = pd.Series(mean_reward)\
-                            .rolling(window=rolling_window,
-                                     center=True,
-                                     min_periods=1)\
-                            .mean().values
-    sem_reward_smooth  = pd.Series(sem_reward)\
-                            .rolling(window=rolling_window,
-                                     center=True,
-                                     min_periods=1)\
-                            .mean().values
+        reward_mean_smooth = pd.Series(mean_reward)\
+                                .rolling(window=rolling_window,
+                                         center=True,
+                                         min_periods=1)\
+                                .mean().values
+        sem_reward_smooth  = pd.Series(sem_reward)\
+                                .rolling(window=rolling_window,
+                                         center=True,
+                                         min_periods=1)\
+                                .mean().values
 
     # load and align action probs
     action_data = {p: {} for p in step_positions}
@@ -75,27 +92,50 @@ for model_dir in model_dirs:
             for run in range(1, n_runs+1)
         ], axis=0)  # shape: (runs, len(eps), 6)
 
-        raw_mean = arr.mean(axis=0)  # (len(eps), 6)
-        raw_sem  = arr.std(axis=0, ddof=1) / np.sqrt(n_runs)
+        if n_runs == 1:
+            # Single-run: rolling mean ± rolling std over episodes for each action
+            raw = arr[0]  # (len(eps), 6)
+            mean_mat = []
+            std_mat = []
+            for a in range(raw.shape[1]):
+                s = pd.Series(raw[:, a])
+                m = (
+                    s.rolling(window=rolling_window, center=True, min_periods=1)
+                    .mean()
+                    .values
+                )
+                sd = (
+                    s.rolling(window=rolling_window, center=True, min_periods=1)
+                    .std(ddof=0)
+                    .fillna(0.0)
+                    .values
+                )
+                mean_mat.append(m)
+                std_mat.append(sd)
+            mean_smooth[p] = np.stack(mean_mat, axis=1)
+            sem_smooth[p] = np.stack(std_mat, axis=1)
+        else:
+            # Multi-run: across-run mean ± SEM, both smoothed
+            raw_mean = arr.mean(axis=0)  # (len(eps), 6)
+            raw_sem  = arr.std(axis=0, ddof=1) / np.sqrt(n_runs)
 
-        # smooth each action curve
-        mean_smooth[p] = np.stack([
-            pd.Series(raw_mean[:, a])
-              .rolling(window=rolling_window,
-                       center=True,
-                       min_periods=1)
-              .mean().values
-            for a in range(raw_mean.shape[1])
-        ], axis=1)
+            mean_smooth[p] = np.stack([
+                pd.Series(raw_mean[:, a])
+                  .rolling(window=rolling_window,
+                           center=True,
+                           min_periods=1)
+                  .mean().values
+                for a in range(raw_mean.shape[1])
+            ], axis=1)
 
-        sem_smooth[p] = np.stack([
-            pd.Series(raw_sem[:, a])
-              .rolling(window=rolling_window,
-                       center=True,
-                       min_periods=1)
-              .mean().values
-            for a in range(raw_sem.shape[1])
-        ], axis=1)
+            sem_smooth[p] = np.stack([
+                pd.Series(raw_sem[:, a])
+                  .rolling(window=rolling_window,
+                           center=True,
+                           min_periods=1)
+                  .mean().values
+                for a in range(raw_sem.shape[1])
+            ], axis=1)
 
     fig, axes = plt.subplots(2, 3, figsize=(10, 6))
     fig.suptitle(f"{model_dir}  (smoothed ± window={rolling_window})", fontsize=16)

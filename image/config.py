@@ -8,7 +8,6 @@ class Config:
     STAGES = [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]]
     NUM_TO_SELECT = 50
     VAL_SET_SIZE = 1000
-    NOISE_FRACTION = 0.1
     SHAPLEY = True
     MC_ITERS = 10
     TRUE_SHAPLEY_SUBSET = 0.25

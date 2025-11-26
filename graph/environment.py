@@ -224,12 +224,14 @@ class GraphEnv(gym.Env):
                     continue
                 logits = self.gcn_model.edge_logits(z[i], z[j])
                 probs = torch.softmax(logits, dim=-1)
-                if torch.max(probs).item() > 0.0:
+                max_prob = torch.max(probs).item()
+                # Only add an edge if the model is confident enough and does not predict "NO_RELATION"
+                if max_prob > 0.5:
                     pred_id = torch.argmax(probs).item()
-                    if pred_id==0:
-                        continue # "NO_RELATION"
+                    if pred_id == 0:
+                        continue  # "NO_RELATION"
                     rel_name = self.relation_types[pred_id]
-                    new_edges.append((u,v,rel_name))
+                    new_edges.append((u, v, rel_name))
 
         for (u,v,relname) in new_edges:
             self.graph.add_edge(u,v, relationship=relname)
@@ -261,15 +263,17 @@ class GraphEnv(gym.Env):
 
         training_graphs = list(self.seen_graphs)
         if self.graph.number_of_edges() > 0:
+            # Always include the current working graph
             training_graphs.append(self._graph_to_pyg_data(self.graph, 16))
 
-        if not training_graphs:
-            random_data = []
-            for _ in range(500):
-                G = self.builder.build_graph()
-                pyg_data = self._graph_to_pyg_data(G, 16)
-                random_data.append(pyg_data)
-            training_graphs = random_data
+        # Always augment with a batch of freshly generated graphs so that the
+        # GCN trains on a diverse set of structures, regardless of episode state.
+        random_data = []
+        for _ in range(500):
+            G = self.builder.build_graph()
+            pyg_data = self._graph_to_pyg_data(G, 16)
+            random_data.append(pyg_data)
+        training_graphs.extend(random_data)
 
         self._train_gcn_on_external_data(training_graphs, 16, 100)
         torch.save(self.gcn_model.state_dict(), model_path)

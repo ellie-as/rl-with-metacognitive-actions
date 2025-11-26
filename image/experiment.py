@@ -23,11 +23,6 @@ setattr(Config, "SHAPLEY", False)
 setattr(Config, "MMR",     False)
 setattr(Config, "LEVELS",  (0.0,))
 
-# This determines whether the CL or non CL setting is used
-#setattr(Config, "STAGES",  [[0, 1], [2, 3], [4, 5], [6, 7], [8, 9]])
-setattr(Config, "STAGES", [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]])
-
-
 REGIME_STAGE_CONFIGS = {
     "non_cl": [[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]],
     "cl": [[0, 1], [2, 3], [4, 5], [6, 7], [8, 9]],
@@ -261,7 +256,7 @@ def train_meta_controller(
         env,
         verbose=1,
         n_steps=128,
-        ent_coef=0.05,
+        ent_coef=0.01,
         learning_rate=_make_lr_schedule(),
         policy_kwargs={
             "lstm_hidden_size": 64,
@@ -419,12 +414,6 @@ if __name__ == "__main__":
         action="store_true",
         help="Only generate plots from existing logs without training.",
     )
-    # parser.add_argument(
-    #     "--timesteps",
-    #     type=int,
-    #     default=10000,
-    #     help="Training timesteps for each regime.",
-    # )
     parser.add_argument(
         "--no-eval",
         action="store_true",
@@ -445,7 +434,7 @@ if __name__ == "__main__":
         raise SystemExit(0)
 
     timesteps_for_regime = {
-        "cl": 30000,
+        "cl": 20000,
         "non_cl": 2000,
     }
     generated = []

@@ -180,6 +180,11 @@ class MetaLearningEnv(gym.Env):
         counts = np.zeros(10, dtype=np.float32)
         for _, lbl in self.buffer:
             counts[int(lbl)] += 1
+        # Convert counts to fractions so the vector reflects the class distribution
+        # of the current hippocampal buffer rather than raw counts.
+        total = float(len(self.buffer))
+        if total > 0.0:
+            counts /= total
         return {
             "buffer_class_counts": counts,
             "time_since_last_train": np.array(

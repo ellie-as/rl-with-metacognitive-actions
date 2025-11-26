@@ -238,7 +238,7 @@ def train_meta_controller(
         vec_env,
         verbose=1,
         n_steps=256,
-        ent_coef=0.05,
+        ent_coef=0.01,
         learning_rate=_make_lr_schedule(),
         policy_kwargs={
             "lstm_hidden_size": 64,
