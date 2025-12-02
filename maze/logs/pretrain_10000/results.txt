@@ -1,29 +1,29 @@
 Action selection baseline (MODE=random, averaged over 10 meta-episodes)
 seed | learned_avg | baseline_avg | learned_sem | baseline_sem
 -----+-------------+--------------+-------------+-------------
-123  | 0.7073      | -0.0997      |             |             
-124  | 0.7070      | -0.0297      |             |             
-125  | 0.6930      | -0.0301      |             |             
-avg  | 0.7024      | -0.0532      | 0.0047      | 0.0233      
+1    | 0.6769      | -0.0588      |             |             
+2    | 0.7201      | -0.0437      |             |             
+3    | 0.6391      | -0.0710      |             |             
+avg  | 0.6787      | -0.0578      | 0.0234      | 0.0079      
 
 Action selection success rate (MODE=random, averaged over 10 meta-episodes)
 seed | learned_success | baseline_success | learned_sem | baseline_sem
 -----+-----------------+------------------+-------------+-------------
-123  | 0.7930          | 0.1210           |             |             
-124  | 0.7890          | 0.1780           |             |             
-125  | 0.7770          | 0.1770           |             |             
-avg  | 0.7863          | 0.1587           | 0.0048      | 0.0188      
+1    | 0.7670          | 0.1540           |             |             
+2    | 0.8020          | 0.1660           |             |             
+3    | 0.7360          | 0.1440           |             |             
+avg  | 0.7683          | 0.1547           | 0.0191      | 0.0064      
 
 Data valuation (learned only, averaged over 10 meta-episodes)
-mode   | seed_123 | seed_124 | seed_125 | avg    | sem   
--------+----------+----------+----------+--------+-------
-longest_paths | 0.5634   | 0.7056   | 0.5717   | 0.6136 | 0.0461
-top_with_mmr  | 0.7735   | 0.7975   | 0.7024   | 0.7578 | 0.0286
+mode   | seed_1 | seed_2 | seed_3 | avg    | sem   
+-------+--------+--------+--------+--------+-------
+longest_paths | 0.6018 | 0.5513 | 0.4199 | 0.5243 | 0.0542
+top_with_mmr  | 0.8351 | 0.7837 | 0.6700 | 0.7629 | 0.0488
 
 Start==Goal statistics (aggregated across seeds)
 mode   | candidates_eq/total | selected_eq/total
 -------+---------------------+------------------
-random | 72 / 1728           | 25 / 600         
+random | 72 / 1728           | 21 / 600         
 longest_paths | 72 / 1728           | 0 / 600          
 top_with_mmr  | 72 / 1728           | 15 / 600         
 
@@ -35,7 +35,7 @@ longest_paths | 0 / 1728                 | 0 / 600
 top_with_mmr  | 0 / 1728                 | 0 / 600               
 
 Data valuation success rate (learned only, averaged over 10 meta-episodes)
-mode   | seed_123 | seed_124 | seed_125 | avg    | sem   
--------+----------+----------+----------+--------+-------
-longest_paths | 0.6760   | 0.7930   | 0.6820   | 0.7170 | 0.0380
-top_with_mmr  | 0.8460   | 0.8650   | 0.7850   | 0.8320 | 0.0241
+mode   | seed_1 | seed_2 | seed_3 | avg    | sem   
+-------+--------+--------+--------+--------+-------
+longest_paths | 0.7060 | 0.6650 | 0.5570 | 0.6427 | 0.0444
+top_with_mmr  | 0.8960 | 0.8560 | 0.7650 | 0.8390 | 0.0388

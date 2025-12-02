@@ -1,0 +1,1369 @@
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 12.0%, 2: 8.0%, 3: 10.0%, 4: 8.0%, 5: 8.0%, 6: 16.0%, 7: 10.0%, 8: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 4.0%, 2: 12.0%, 3: 6.0%, 4: 10.0%, 5: 8.0%, 6: 14.0%, 7: 10.0%, 8: 6.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 12.0%, 2: 8.0%, 3: 10.0%, 4: 8.0%, 5: 16.0%, 6: 8.0%, 7: 8.0%, 8: 6.0%, 9: 12.0%
+Obtained reward of 0.39355555555555555 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 6.0%, 2: 12.0%, 3: 16.0%, 4: 12.0%, 5: 2.0%, 6: 12.0%, 7: 10.0%, 8: 8.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 6.0%, 2: 10.0%, 3: 4.0%, 4: 12.0%, 5: 12.0%, 6: 6.0%, 7: 12.0%, 8: 12.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 14.0%, 3: 12.0%, 4: 8.0%, 5: 10.0%, 6: 12.0%, 7: 16.0%, 8: 10.0%, 9: 2.0%
+Obtained reward of 0.4017777777777778 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 8.0%, 2: 12.0%, 3: 14.0%, 4: 6.0%, 5: 8.0%, 6: 12.0%, 7: 12.0%, 8: 2.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 22.0%, 3: 10.0%, 4: 12.0%, 5: 8.0%, 6: 10.0%, 7: 12.0%, 8: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 12.0%, 2: 14.0%, 3: 12.0%, 4: 2.0%, 5: 8.0%, 6: 10.0%, 7: 14.0%, 8: 8.0%, 9: 8.0%
+Obtained reward of 0.43177777777777776 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 16.0%, 2: 18.0%, 3: 4.0%, 4: 6.0%, 5: 12.0%, 6: 12.0%, 7: 12.0%, 8: 4.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 14.0%, 2: 12.0%, 3: 4.0%, 4: 16.0%, 5: 6.0%, 6: 12.0%, 7: 10.0%, 8: 8.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 16.0%, 2: 18.0%, 3: 14.0%, 4: 8.0%, 5: 8.0%, 6: 6.0%, 7: 10.0%, 8: 6.0%, 9: 4.0%
+Obtained reward of 0.36277777777777775 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 6.0%, 2: 14.0%, 3: 2.0%, 4: 18.0%, 5: 8.0%, 6: 8.0%, 7: 12.0%, 8: 14.0%, 9: 2.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 8.0%, 2: 14.0%, 3: 10.0%, 4: 12.0%, 5: 10.0%, 6: 4.0%, 7: 10.0%, 8: 12.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 18.0%, 1: 6.0%, 2: 6.0%, 3: 12.0%, 4: 14.0%, 5: 8.0%, 6: 6.0%, 7: 12.0%, 8: 14.0%, 9: 4.0%
+Obtained reward of 0.4311111111111111 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 1: 10.0%, 2: 18.0%, 3: 14.0%, 4: 10.0%, 6: 14.0%, 7: 4.0%, 8: 18.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 10.0%, 2: 12.0%, 3: 12.0%, 4: 4.0%, 5: 12.0%, 6: 10.0%, 7: 10.0%, 8: 12.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 12.0%, 3: 18.0%, 4: 16.0%, 5: 4.0%, 6: 8.0%, 7: 6.0%, 8: 6.0%, 9: 10.0%
+Obtained reward of 0.44366666666666665 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 18.0%, 1: 4.0%, 2: 8.0%, 3: 4.0%, 4: 6.0%, 5: 16.0%, 6: 8.0%, 7: 20.0%, 8: 10.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 12.0%, 2: 2.0%, 3: 12.0%, 4: 18.0%, 5: 8.0%, 6: 8.0%, 7: 18.0%, 8: 4.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 4.0%, 3: 10.0%, 4: 16.0%, 5: 2.0%, 6: 8.0%, 7: 20.0%, 8: 14.0%, 9: 8.0%
+Obtained reward of 0.43777777777777777 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 20.0%, 2: 12.0%, 3: 14.0%, 4: 12.0%, 5: 10.0%, 6: 10.0%, 7: 4.0%, 8: 2.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 24.0%, 2: 14.0%, 3: 2.0%, 4: 12.0%, 5: 10.0%, 6: 8.0%, 7: 8.0%, 8: 10.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 18.0%, 2: 6.0%, 3: 2.0%, 4: 10.0%, 5: 8.0%, 6: 10.0%, 7: 8.0%, 8: 12.0%, 9: 12.0%
+Obtained reward of 0.4108888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 12.0%, 2: 12.0%, 3: 6.0%, 4: 12.0%, 6: 16.0%, 7: 8.0%, 8: 16.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 12.0%, 2: 12.0%, 3: 4.0%, 4: 10.0%, 5: 4.0%, 6: 8.0%, 7: 6.0%, 8: 18.0%, 9: 16.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 16.0%, 2: 12.0%, 3: 2.0%, 4: 10.0%, 5: 12.0%, 6: 12.0%, 7: 4.0%, 8: 16.0%, 9: 4.0%
+Obtained reward of 0.3798888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 12.0%, 2: 18.0%, 3: 12.0%, 4: 6.0%, 5: 8.0%, 6: 12.0%, 7: 10.0%, 8: 4.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 4.0%, 1: 16.0%, 2: 6.0%, 3: 18.0%, 4: 14.0%, 5: 8.0%, 6: 8.0%, 7: 18.0%, 8: 2.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 22.0%, 3: 10.0%, 4: 8.0%, 5: 4.0%, 6: 10.0%, 7: 16.0%, 8: 2.0%, 9: 12.0%
+Obtained reward of 0.38255555555555554 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 6.0%, 2: 16.0%, 3: 6.0%, 4: 12.0%, 5: 6.0%, 6: 8.0%, 7: 8.0%, 8: 10.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 14.0%, 2: 10.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 14.0%, 7: 4.0%, 8: 8.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 6.0%, 2: 10.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 6.0%, 7: 8.0%, 8: 14.0%, 9: 12.0%
+Obtained reward of 0.4458888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 4.0%, 1: 8.0%, 2: 16.0%, 3: 10.0%, 4: 12.0%, 5: 14.0%, 6: 10.0%, 7: 10.0%, 8: 6.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 8.0%, 2: 2.0%, 3: 8.0%, 4: 16.0%, 5: 18.0%, 6: 8.0%, 7: 12.0%, 8: 14.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 6.0%, 2: 18.0%, 3: 16.0%, 4: 18.0%, 5: 4.0%, 6: 4.0%, 7: 8.0%, 8: 8.0%, 9: 6.0%
+Obtained reward of 0.43 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 10.0%, 2: 8.0%, 3: 6.0%, 4: 16.0%, 5: 16.0%, 6: 4.0%, 7: 12.0%, 8: 8.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 14.0%, 2: 4.0%, 3: 12.0%, 4: 8.0%, 5: 8.0%, 6: 8.0%, 7: 10.0%, 8: 18.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 14.0%, 2: 8.0%, 3: 16.0%, 4: 18.0%, 5: 6.0%, 6: 6.0%, 7: 6.0%, 8: 16.0%, 9: 4.0%
+Obtained reward of 0.423 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 8.0%, 2: 18.0%, 3: 16.0%, 4: 12.0%, 5: 8.0%, 6: 2.0%, 7: 6.0%, 8: 8.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 14.0%, 2: 6.0%, 3: 18.0%, 4: 12.0%, 5: 6.0%, 6: 12.0%, 7: 2.0%, 8: 6.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 20.0%, 2: 14.0%, 3: 12.0%, 4: 8.0%, 5: 10.0%, 6: 6.0%, 7: 4.0%, 8: 6.0%, 9: 8.0%
+Obtained reward of 0.37344444444444447 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 4.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 10.0%, 7: 12.0%, 8: 14.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 4.0%, 1: 8.0%, 2: 4.0%, 3: 20.0%, 4: 18.0%, 5: 6.0%, 6: 12.0%, 7: 10.0%, 8: 10.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 6.0%, 3: 2.0%, 4: 14.0%, 5: 6.0%, 6: 14.0%, 7: 12.0%, 8: 12.0%, 9: 18.0%
+Obtained reward of 0.4231111111111111 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 2.0%, 1: 6.0%, 2: 14.0%, 3: 6.0%, 4: 10.0%, 5: 4.0%, 6: 8.0%, 7: 20.0%, 8: 6.0%, 9: 24.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 6.0%, 2: 4.0%, 3: 8.0%, 4: 16.0%, 5: 6.0%, 6: 14.0%, 7: 10.0%, 8: 8.0%, 9: 20.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 6.0%, 2: 10.0%, 3: 14.0%, 4: 6.0%, 5: 2.0%, 6: 14.0%, 7: 10.0%, 8: 8.0%, 9: 22.0%
+Obtained reward of 0.39811111111111114 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 12.0%, 2: 10.0%, 3: 12.0%, 4: 20.0%, 5: 2.0%, 6: 12.0%, 7: 4.0%, 8: 8.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 16.0%, 2: 8.0%, 3: 12.0%, 5: 10.0%, 6: 10.0%, 7: 8.0%, 8: 16.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 10.0%, 2: 10.0%, 3: 12.0%, 4: 10.0%, 5: 8.0%, 6: 10.0%, 7: 6.0%, 8: 10.0%, 9: 18.0%
+Obtained reward of 0.4672222222222222 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 12.0%, 2: 10.0%, 3: 6.0%, 4: 6.0%, 5: 10.0%, 6: 12.0%, 7: 14.0%, 8: 10.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 2.0%, 1: 10.0%, 2: 18.0%, 3: 16.0%, 4: 6.0%, 5: 2.0%, 6: 20.0%, 7: 12.0%, 8: 12.0%, 9: 2.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 16.0%, 2: 16.0%, 3: 8.0%, 4: 10.0%, 5: 6.0%, 6: 12.0%, 7: 10.0%, 8: 10.0%, 9: 6.0%
+Obtained reward of 0.37544444444444447 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 14.0%, 3: 6.0%, 4: 6.0%, 5: 16.0%, 6: 8.0%, 7: 20.0%, 8: 8.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 14.0%, 3: 20.0%, 4: 4.0%, 5: 10.0%, 6: 4.0%, 7: 14.0%, 8: 8.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 6.0%, 2: 12.0%, 3: 10.0%, 4: 12.0%, 5: 6.0%, 6: 6.0%, 7: 16.0%, 8: 8.0%, 9: 12.0%
+Obtained reward of 0.38522222222222224 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 14.0%, 2: 10.0%, 3: 14.0%, 4: 10.0%, 5: 6.0%, 6: 8.0%, 7: 12.0%, 8: 10.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 6.0%, 2: 2.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 14.0%, 7: 6.0%, 8: 12.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 8.0%, 2: 12.0%, 3: 10.0%, 4: 8.0%, 5: 8.0%, 6: 6.0%, 7: 10.0%, 8: 16.0%, 9: 12.0%
+Obtained reward of 0.41633333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 18.0%, 1: 8.0%, 2: 6.0%, 3: 12.0%, 4: 8.0%, 5: 12.0%, 6: 12.0%, 7: 6.0%, 8: 10.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 8.0%, 2: 6.0%, 3: 14.0%, 4: 12.0%, 5: 14.0%, 6: 10.0%, 7: 12.0%, 8: 8.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 14.0%, 2: 2.0%, 3: 18.0%, 4: 14.0%, 5: 8.0%, 6: 14.0%, 7: 4.0%, 8: 4.0%, 9: 14.0%
+Obtained reward of 0.4107777777777778 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 8.0%, 2: 6.0%, 3: 8.0%, 4: 14.0%, 5: 10.0%, 6: 8.0%, 7: 10.0%, 8: 8.0%, 9: 20.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 8.0%, 2: 12.0%, 3: 22.0%, 4: 8.0%, 5: 10.0%, 6: 6.0%, 7: 8.0%, 8: 4.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 10.0%, 2: 8.0%, 3: 14.0%, 4: 8.0%, 5: 10.0%, 6: 10.0%, 7: 8.0%, 8: 6.0%, 9: 12.0%
+Obtained reward of 0.44322222222222224 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 10.0%, 2: 8.0%, 3: 6.0%, 4: 10.0%, 5: 6.0%, 6: 12.0%, 7: 14.0%, 8: 6.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 16.0%, 2: 10.0%, 3: 12.0%, 4: 10.0%, 5: 6.0%, 6: 8.0%, 7: 16.0%, 8: 6.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 6.0%, 3: 8.0%, 4: 10.0%, 5: 18.0%, 6: 8.0%, 7: 10.0%, 8: 4.0%, 9: 18.0%
+Obtained reward of 0.4468888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 8.0%, 2: 10.0%, 3: 8.0%, 4: 12.0%, 5: 10.0%, 6: 6.0%, 7: 18.0%, 8: 10.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 8.0%, 2: 4.0%, 3: 16.0%, 4: 12.0%, 5: 4.0%, 6: 12.0%, 7: 8.0%, 8: 18.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 10.0%, 2: 10.0%, 3: 20.0%, 4: 14.0%, 5: 4.0%, 6: 2.0%, 7: 12.0%, 8: 16.0%, 9: 6.0%
+Obtained reward of 0.41988888888888887 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 12.0%, 3: 10.0%, 4: 14.0%, 5: 12.0%, 6: 4.0%, 7: 12.0%, 8: 6.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 16.0%, 2: 6.0%, 3: 12.0%, 4: 6.0%, 5: 10.0%, 6: 12.0%, 7: 14.0%, 8: 10.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 10.0%, 2: 2.0%, 3: 8.0%, 4: 4.0%, 5: 12.0%, 6: 8.0%, 7: 16.0%, 8: 20.0%, 9: 6.0%
+Obtained reward of 0.3433333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 12.0%, 2: 8.0%, 3: 10.0%, 4: 8.0%, 5: 8.0%, 6: 16.0%, 7: 10.0%, 8: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 4.0%, 2: 12.0%, 3: 6.0%, 4: 10.0%, 5: 8.0%, 6: 14.0%, 7: 10.0%, 8: 6.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 12.0%, 2: 8.0%, 3: 10.0%, 4: 8.0%, 5: 16.0%, 6: 8.0%, 7: 8.0%, 8: 6.0%, 9: 12.0%
+Obtained reward of 0.39355555555555555 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 6.0%, 2: 12.0%, 3: 16.0%, 4: 12.0%, 5: 2.0%, 6: 12.0%, 7: 10.0%, 8: 8.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 6.0%, 2: 10.0%, 3: 4.0%, 4: 12.0%, 5: 12.0%, 6: 6.0%, 7: 12.0%, 8: 12.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 14.0%, 3: 12.0%, 4: 8.0%, 5: 10.0%, 6: 12.0%, 7: 16.0%, 8: 10.0%, 9: 2.0%
+Obtained reward of 0.4017777777777778 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 8.0%, 2: 12.0%, 3: 14.0%, 4: 6.0%, 5: 8.0%, 6: 12.0%, 7: 12.0%, 8: 2.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 22.0%, 3: 10.0%, 4: 12.0%, 5: 8.0%, 6: 10.0%, 7: 12.0%, 8: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 12.0%, 2: 14.0%, 3: 12.0%, 4: 2.0%, 5: 8.0%, 6: 10.0%, 7: 14.0%, 8: 8.0%, 9: 8.0%
+Obtained reward of 0.43177777777777776 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 16.0%, 2: 18.0%, 3: 4.0%, 4: 6.0%, 5: 12.0%, 6: 12.0%, 7: 12.0%, 8: 4.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 14.0%, 2: 12.0%, 3: 4.0%, 4: 16.0%, 5: 6.0%, 6: 12.0%, 7: 10.0%, 8: 8.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 16.0%, 2: 18.0%, 3: 14.0%, 4: 8.0%, 5: 8.0%, 6: 6.0%, 7: 10.0%, 8: 6.0%, 9: 4.0%
+Obtained reward of 0.36277777777777775 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 6.0%, 2: 14.0%, 3: 2.0%, 4: 18.0%, 5: 8.0%, 6: 8.0%, 7: 12.0%, 8: 14.0%, 9: 2.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 8.0%, 2: 14.0%, 3: 10.0%, 4: 12.0%, 5: 10.0%, 6: 4.0%, 7: 10.0%, 8: 12.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 18.0%, 1: 6.0%, 2: 6.0%, 3: 12.0%, 4: 14.0%, 5: 8.0%, 6: 6.0%, 7: 12.0%, 8: 14.0%, 9: 4.0%
+Obtained reward of 0.4311111111111111 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 1: 10.0%, 2: 18.0%, 3: 14.0%, 4: 10.0%, 6: 14.0%, 7: 4.0%, 8: 18.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 10.0%, 2: 12.0%, 3: 12.0%, 4: 4.0%, 5: 12.0%, 6: 10.0%, 7: 10.0%, 8: 12.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 12.0%, 3: 18.0%, 4: 16.0%, 5: 4.0%, 6: 8.0%, 7: 6.0%, 8: 6.0%, 9: 10.0%
+Obtained reward of 0.44366666666666665 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 18.0%, 1: 4.0%, 2: 8.0%, 3: 4.0%, 4: 6.0%, 5: 16.0%, 6: 8.0%, 7: 20.0%, 8: 10.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 12.0%, 2: 2.0%, 3: 12.0%, 4: 18.0%, 5: 8.0%, 6: 8.0%, 7: 18.0%, 8: 4.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 4.0%, 3: 10.0%, 4: 16.0%, 5: 2.0%, 6: 8.0%, 7: 20.0%, 8: 14.0%, 9: 8.0%
+Obtained reward of 0.43777777777777777 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 20.0%, 2: 12.0%, 3: 14.0%, 4: 12.0%, 5: 10.0%, 6: 10.0%, 7: 4.0%, 8: 2.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 24.0%, 2: 14.0%, 3: 2.0%, 4: 12.0%, 5: 10.0%, 6: 8.0%, 7: 8.0%, 8: 10.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 18.0%, 2: 6.0%, 3: 2.0%, 4: 10.0%, 5: 8.0%, 6: 10.0%, 7: 8.0%, 8: 12.0%, 9: 12.0%
+Obtained reward of 0.4108888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 12.0%, 2: 12.0%, 3: 6.0%, 4: 12.0%, 6: 16.0%, 7: 8.0%, 8: 16.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 12.0%, 2: 12.0%, 3: 4.0%, 4: 10.0%, 5: 4.0%, 6: 8.0%, 7: 6.0%, 8: 18.0%, 9: 16.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 16.0%, 2: 12.0%, 3: 2.0%, 4: 10.0%, 5: 12.0%, 6: 12.0%, 7: 4.0%, 8: 16.0%, 9: 4.0%
+Obtained reward of 0.3798888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 12.0%, 2: 18.0%, 3: 12.0%, 4: 6.0%, 5: 8.0%, 6: 12.0%, 7: 10.0%, 8: 4.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 4.0%, 1: 16.0%, 2: 6.0%, 3: 18.0%, 4: 14.0%, 5: 8.0%, 6: 8.0%, 7: 18.0%, 8: 2.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 22.0%, 3: 10.0%, 4: 8.0%, 5: 4.0%, 6: 10.0%, 7: 16.0%, 8: 2.0%, 9: 12.0%
+Obtained reward of 0.38255555555555554 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 6.0%, 2: 16.0%, 3: 6.0%, 4: 12.0%, 5: 6.0%, 6: 8.0%, 7: 8.0%, 8: 10.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 14.0%, 2: 10.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 14.0%, 7: 4.0%, 8: 8.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 6.0%, 2: 10.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 6.0%, 7: 8.0%, 8: 14.0%, 9: 12.0%
+Obtained reward of 0.4458888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 4.0%, 1: 8.0%, 2: 16.0%, 3: 10.0%, 4: 12.0%, 5: 14.0%, 6: 10.0%, 7: 10.0%, 8: 6.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 8.0%, 2: 2.0%, 3: 8.0%, 4: 16.0%, 5: 18.0%, 6: 8.0%, 7: 12.0%, 8: 14.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 6.0%, 2: 18.0%, 3: 16.0%, 4: 18.0%, 5: 4.0%, 6: 4.0%, 7: 8.0%, 8: 8.0%, 9: 6.0%
+Obtained reward of 0.43 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 10.0%, 2: 8.0%, 3: 6.0%, 4: 16.0%, 5: 16.0%, 6: 4.0%, 7: 12.0%, 8: 8.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 14.0%, 2: 4.0%, 3: 12.0%, 4: 8.0%, 5: 8.0%, 6: 8.0%, 7: 10.0%, 8: 18.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 14.0%, 2: 8.0%, 3: 16.0%, 4: 18.0%, 5: 6.0%, 6: 6.0%, 7: 6.0%, 8: 16.0%, 9: 4.0%
+Obtained reward of 0.423 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 8.0%, 2: 18.0%, 3: 16.0%, 4: 12.0%, 5: 8.0%, 6: 2.0%, 7: 6.0%, 8: 8.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 14.0%, 2: 6.0%, 3: 18.0%, 4: 12.0%, 5: 6.0%, 6: 12.0%, 7: 2.0%, 8: 6.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 20.0%, 2: 14.0%, 3: 12.0%, 4: 8.0%, 5: 10.0%, 6: 6.0%, 7: 4.0%, 8: 6.0%, 9: 8.0%
+Obtained reward of 0.37344444444444447 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 4.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 10.0%, 7: 12.0%, 8: 14.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 4.0%, 1: 8.0%, 2: 4.0%, 3: 20.0%, 4: 18.0%, 5: 6.0%, 6: 12.0%, 7: 10.0%, 8: 10.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 6.0%, 3: 2.0%, 4: 14.0%, 5: 6.0%, 6: 14.0%, 7: 12.0%, 8: 12.0%, 9: 18.0%
+Obtained reward of 0.4231111111111111 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 2.0%, 1: 6.0%, 2: 14.0%, 3: 6.0%, 4: 10.0%, 5: 4.0%, 6: 8.0%, 7: 20.0%, 8: 6.0%, 9: 24.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 6.0%, 2: 4.0%, 3: 8.0%, 4: 16.0%, 5: 6.0%, 6: 14.0%, 7: 10.0%, 8: 8.0%, 9: 20.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 6.0%, 2: 10.0%, 3: 14.0%, 4: 6.0%, 5: 2.0%, 6: 14.0%, 7: 10.0%, 8: 8.0%, 9: 22.0%
+Obtained reward of 0.39811111111111114 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 12.0%, 2: 10.0%, 3: 12.0%, 4: 20.0%, 5: 2.0%, 6: 12.0%, 7: 4.0%, 8: 8.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 16.0%, 2: 8.0%, 3: 12.0%, 5: 10.0%, 6: 10.0%, 7: 8.0%, 8: 16.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 10.0%, 2: 10.0%, 3: 12.0%, 4: 10.0%, 5: 8.0%, 6: 10.0%, 7: 6.0%, 8: 10.0%, 9: 18.0%
+Obtained reward of 0.4672222222222222 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 12.0%, 2: 10.0%, 3: 6.0%, 4: 6.0%, 5: 10.0%, 6: 12.0%, 7: 14.0%, 8: 10.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 2.0%, 1: 10.0%, 2: 18.0%, 3: 16.0%, 4: 6.0%, 5: 2.0%, 6: 20.0%, 7: 12.0%, 8: 12.0%, 9: 2.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 16.0%, 2: 16.0%, 3: 8.0%, 4: 10.0%, 5: 6.0%, 6: 12.0%, 7: 10.0%, 8: 10.0%, 9: 6.0%
+Obtained reward of 0.37544444444444447 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 14.0%, 3: 6.0%, 4: 6.0%, 5: 16.0%, 6: 8.0%, 7: 20.0%, 8: 8.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 6.0%, 2: 14.0%, 3: 20.0%, 4: 4.0%, 5: 10.0%, 6: 4.0%, 7: 14.0%, 8: 8.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 6.0%, 2: 12.0%, 3: 10.0%, 4: 12.0%, 5: 6.0%, 6: 6.0%, 7: 16.0%, 8: 8.0%, 9: 12.0%
+Obtained reward of 0.38522222222222224 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 14.0%, 2: 10.0%, 3: 14.0%, 4: 10.0%, 5: 6.0%, 6: 8.0%, 7: 12.0%, 8: 10.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 6.0%, 2: 2.0%, 3: 8.0%, 4: 12.0%, 5: 12.0%, 6: 14.0%, 7: 6.0%, 8: 12.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 8.0%, 2: 12.0%, 3: 10.0%, 4: 8.0%, 5: 8.0%, 6: 6.0%, 7: 10.0%, 8: 16.0%, 9: 12.0%
+Obtained reward of 0.41633333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 18.0%, 1: 8.0%, 2: 6.0%, 3: 12.0%, 4: 8.0%, 5: 12.0%, 6: 12.0%, 7: 6.0%, 8: 10.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 8.0%, 2: 6.0%, 3: 14.0%, 4: 12.0%, 5: 14.0%, 6: 10.0%, 7: 12.0%, 8: 8.0%, 9: 8.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 14.0%, 2: 2.0%, 3: 18.0%, 4: 14.0%, 5: 8.0%, 6: 14.0%, 7: 4.0%, 8: 4.0%, 9: 14.0%
+Obtained reward of 0.4107777777777778 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 8.0%, 2: 6.0%, 3: 8.0%, 4: 14.0%, 5: 10.0%, 6: 8.0%, 7: 10.0%, 8: 8.0%, 9: 20.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 8.0%, 2: 12.0%, 3: 22.0%, 4: 8.0%, 5: 10.0%, 6: 6.0%, 7: 8.0%, 8: 4.0%, 9: 14.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 10.0%, 2: 8.0%, 3: 14.0%, 4: 8.0%, 5: 10.0%, 6: 10.0%, 7: 8.0%, 8: 6.0%, 9: 12.0%
+Obtained reward of 0.44322222222222224 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 16.0%, 1: 10.0%, 2: 8.0%, 3: 6.0%, 4: 10.0%, 5: 6.0%, 6: 12.0%, 7: 14.0%, 8: 6.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 16.0%, 2: 10.0%, 3: 12.0%, 4: 10.0%, 5: 6.0%, 6: 8.0%, 7: 16.0%, 8: 6.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 8.0%, 1: 10.0%, 2: 6.0%, 3: 8.0%, 4: 10.0%, 5: 18.0%, 6: 8.0%, 7: 10.0%, 8: 4.0%, 9: 18.0%
+Obtained reward of 0.4468888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 12.0%, 1: 8.0%, 2: 10.0%, 3: 8.0%, 4: 12.0%, 5: 10.0%, 6: 6.0%, 7: 18.0%, 8: 10.0%, 9: 6.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 8.0%, 2: 4.0%, 3: 16.0%, 4: 12.0%, 5: 4.0%, 6: 12.0%, 7: 8.0%, 8: 18.0%, 9: 12.0%
+Class distribution from buffer (selected) ⇒ 0: 6.0%, 1: 10.0%, 2: 10.0%, 3: 20.0%, 4: 14.0%, 5: 4.0%, 6: 2.0%, 7: 12.0%, 8: 16.0%, 9: 6.0%
+Obtained reward of 0.41988888888888887 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 12.0%, 3: 10.0%, 4: 14.0%, 5: 12.0%, 6: 4.0%, 7: 12.0%, 8: 6.0%, 9: 10.0%
+Class distribution from buffer (selected) ⇒ 0: 10.0%, 1: 16.0%, 2: 6.0%, 3: 12.0%, 4: 6.0%, 5: 10.0%, 6: 12.0%, 7: 14.0%, 8: 10.0%, 9: 4.0%
+Class distribution from buffer (selected) ⇒ 0: 14.0%, 1: 10.0%, 2: 2.0%, 3: 8.0%, 4: 4.0%, 5: 12.0%, 6: 8.0%, 7: 16.0%, 8: 20.0%, 9: 6.0%
+Obtained reward of 0.3433333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3342222222222222 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.4073333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.302 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3233333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.36766666666666664 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3338888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3422222222222222 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3768888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.302 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.33866666666666667 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.38666666666666666 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.35388888888888886 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3277777777777778 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.37144444444444447 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3631111111111111 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.35988888888888887 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.37022222222222223 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3111111111111111 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3998888888888889 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3312222222222222 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.38655555555555554 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.33211111111111113 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.41055555555555556 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.3273333333333333 at end of episode.
+Progressing to stage 0 of 1
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.40655555555555556 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 50.0%, 3: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 50.0%, 3: 50.0%
+Finetuning classifier
+Obtained reward of 0.16555555555555557 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 25.0%, 3: 25.0%, 4: 25.0%, 5: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 25.0%, 3: 25.0%, 4: 25.0%, 5: 25.0%
+Finetuning classifier
+Obtained reward of 0.2341111111111111 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%, 6: 16.7%, 7: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%, 6: 16.7%, 7: 16.7%
+Finetuning classifier
+Obtained reward of 0.28344444444444444 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%, 8: 12.5%, 9: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%, 8: 12.5%, 9: 12.5%
+Finetuning classifier
+Obtained reward of 0.3562222222222222 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16877777777777778 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2836666666666667 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3244444444444444 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.35655555555555557 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.4298888888888889 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16955555555555554 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2728888888888889 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3482222222222222 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.37322222222222223 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.4748888888888889 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16733333333333333 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2776666666666667 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3323333333333333 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.38266666666666665 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.45544444444444443 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16822222222222222 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2823333333333333 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3403333333333333 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.39166666666666666 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.45655555555555555 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16777777777777778 at end of episode.
+Progressing to stage 1 of 5
+Class distribution from buffer (selected) ⇒ 2: 58.0%, 3: 42.0%
+Class distribution from buffer (selected) ⇒ 2: 56.0%, 3: 44.0%
+Class distribution from buffer (selected) ⇒ 2: 60.0%, 3: 40.0%
+Obtained reward of 0.1658888888888889 at end of episode.
+Progressing to stage 2 of 5
+Class distribution from buffer (selected) ⇒ 4: 58.0%, 5: 42.0%
+Class distribution from buffer (selected) ⇒ 4: 58.0%, 5: 42.0%
+Class distribution from buffer (selected) ⇒ 4: 58.0%, 5: 42.0%
+Obtained reward of 0.1741111111111111 at end of episode.
+Progressing to stage 3 of 5
+Class distribution from buffer (selected) ⇒ 6: 46.0%, 7: 54.0%
+Class distribution from buffer (selected) ⇒ 6: 42.0%, 7: 58.0%
+Class distribution from buffer (selected) ⇒ 6: 40.0%, 7: 60.0%
+Obtained reward of 0.17344444444444446 at end of episode.
+Progressing to stage 4 of 5
+Class distribution from buffer (selected) ⇒ 8: 54.0%, 9: 46.0%
+Class distribution from buffer (selected) ⇒ 8: 54.0%, 9: 46.0%
+Class distribution from buffer (selected) ⇒ 8: 48.0%, 9: 52.0%
+Obtained reward of 0.17133333333333334 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 42.0%, 1: 58.0%
+Class distribution from buffer (selected) ⇒ 0: 56.0%, 1: 44.0%
+Class distribution from buffer (selected) ⇒ 0: 42.0%, 1: 58.0%
+Obtained reward of 0.1691111111111111 at end of episode.
+Progressing to stage 1 of 5
+Class distribution from buffer (selected) ⇒ 2: 52.0%, 3: 48.0%
+Class distribution from buffer (selected) ⇒ 2: 60.0%, 3: 40.0%
+Class distribution from buffer (selected) ⇒ 2: 50.0%, 3: 50.0%
+Obtained reward of 0.16522222222222221 at end of episode.
+Progressing to stage 2 of 5
+Class distribution from buffer (selected) ⇒ 4: 42.0%, 5: 58.0%
+Class distribution from buffer (selected) ⇒ 4: 58.0%, 5: 42.0%
+Class distribution from buffer (selected) ⇒ 4: 56.0%, 5: 44.0%
+Obtained reward of 0.17555555555555555 at end of episode.
+Progressing to stage 3 of 5
+Class distribution from buffer (selected) ⇒ 6: 44.0%, 7: 56.0%
+Class distribution from buffer (selected) ⇒ 6: 36.0%, 7: 64.0%
+Class distribution from buffer (selected) ⇒ 6: 52.0%, 7: 48.0%
+Obtained reward of 0.1748888888888889 at end of episode.
+Progressing to stage 4 of 5
+Class distribution from buffer (selected) ⇒ 8: 46.0%, 9: 54.0%
+Class distribution from buffer (selected) ⇒ 8: 34.0%, 9: 66.0%
+Class distribution from buffer (selected) ⇒ 8: 42.0%, 9: 58.0%
+Obtained reward of 0.17655555555555555 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 50.0%, 1: 50.0%
+Class distribution from buffer (selected) ⇒ 0: 54.0%, 1: 46.0%
+Class distribution from buffer (selected) ⇒ 0: 42.0%, 1: 58.0%
+Obtained reward of 0.16844444444444445 at end of episode.
+Progressing to stage 1 of 5
+Class distribution from buffer (selected) ⇒ 2: 44.0%, 3: 56.0%
+Class distribution from buffer (selected) ⇒ 2: 66.0%, 3: 34.0%
+Class distribution from buffer (selected) ⇒ 2: 62.0%, 3: 38.0%
+Obtained reward of 0.16344444444444445 at end of episode.
+Progressing to stage 2 of 5
+Class distribution from buffer (selected) ⇒ 4: 54.0%, 5: 46.0%
+Class distribution from buffer (selected) ⇒ 4: 44.0%, 5: 56.0%
+Class distribution from buffer (selected) ⇒ 4: 58.0%, 5: 42.0%
+Obtained reward of 0.17477777777777778 at end of episode.
+Progressing to stage 3 of 5
+Class distribution from buffer (selected) ⇒ 6: 56.0%, 7: 44.0%
+Class distribution from buffer (selected) ⇒ 6: 46.0%, 7: 54.0%
+Class distribution from buffer (selected) ⇒ 6: 48.0%, 7: 52.0%
+Obtained reward of 0.1718888888888889 at end of episode.
+Progressing to stage 4 of 5
+Class distribution from buffer (selected) ⇒ 8: 44.0%, 9: 56.0%
+Class distribution from buffer (selected) ⇒ 8: 62.0%, 9: 38.0%
+Class distribution from buffer (selected) ⇒ 8: 52.0%, 9: 48.0%
+Obtained reward of 0.17222222222222222 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 40.0%, 1: 60.0%
+Class distribution from buffer (selected) ⇒ 0: 46.0%, 1: 54.0%
+Class distribution from buffer (selected) ⇒ 0: 46.0%, 1: 54.0%
+Obtained reward of 0.171 at end of episode.
+Progressing to stage 1 of 5
+Class distribution from buffer (selected) ⇒ 2: 56.0%, 3: 44.0%
+Class distribution from buffer (selected) ⇒ 2: 48.0%, 3: 52.0%
+Class distribution from buffer (selected) ⇒ 2: 56.0%, 3: 44.0%
+Obtained reward of 0.1678888888888889 at end of episode.
+Progressing to stage 2 of 5
+Class distribution from buffer (selected) ⇒ 4: 42.0%, 5: 58.0%
+Class distribution from buffer (selected) ⇒ 4: 42.0%, 5: 58.0%
+Class distribution from buffer (selected) ⇒ 4: 42.0%, 5: 58.0%
+Obtained reward of 0.17277777777777778 at end of episode.
+Progressing to stage 3 of 5
+Class distribution from buffer (selected) ⇒ 6: 56.0%, 7: 44.0%
+Class distribution from buffer (selected) ⇒ 6: 46.0%, 7: 54.0%
+Class distribution from buffer (selected) ⇒ 6: 48.0%, 7: 52.0%
+Obtained reward of 0.17433333333333334 at end of episode.
+Progressing to stage 4 of 5
+Class distribution from buffer (selected) ⇒ 8: 54.0%, 9: 46.0%
+Class distribution from buffer (selected) ⇒ 8: 40.0%, 9: 60.0%
+Class distribution from buffer (selected) ⇒ 8: 44.0%, 9: 56.0%
+Obtained reward of 0.17155555555555554 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 60.0%, 1: 40.0%
+Class distribution from buffer (selected) ⇒ 0: 64.0%, 1: 36.0%
+Class distribution from buffer (selected) ⇒ 0: 70.0%, 1: 30.0%
+Obtained reward of 0.16877777777777778 at end of episode.
+Progressing to stage 1 of 5
+Class distribution from buffer (selected) ⇒ 2: 40.0%, 3: 60.0%
+Class distribution from buffer (selected) ⇒ 2: 44.0%, 3: 56.0%
+Class distribution from buffer (selected) ⇒ 2: 52.0%, 3: 48.0%
+Obtained reward of 0.16777777777777778 at end of episode.
+Progressing to stage 2 of 5
+Class distribution from buffer (selected) ⇒ 4: 52.0%, 5: 48.0%
+Class distribution from buffer (selected) ⇒ 4: 58.0%, 5: 42.0%
+Class distribution from buffer (selected) ⇒ 4: 40.0%, 5: 60.0%
+Obtained reward of 0.1718888888888889 at end of episode.
+Progressing to stage 3 of 5
+Class distribution from buffer (selected) ⇒ 6: 62.0%, 7: 38.0%
+Class distribution from buffer (selected) ⇒ 6: 58.0%, 7: 42.0%
+Class distribution from buffer (selected) ⇒ 6: 50.0%, 7: 50.0%
+Obtained reward of 0.17555555555555555 at end of episode.
+Progressing to stage 4 of 5
+Class distribution from buffer (selected) ⇒ 8: 64.0%, 9: 36.0%
+Class distribution from buffer (selected) ⇒ 8: 48.0%, 9: 52.0%
+Class distribution from buffer (selected) ⇒ 8: 54.0%, 9: 46.0%
+Obtained reward of 0.17233333333333334 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Class distribution from buffer (selected) ⇒ 0: 42.0%, 1: 58.0%
+Class distribution from buffer (selected) ⇒ 0: 50.0%, 1: 50.0%
+Class distribution from buffer (selected) ⇒ 0: 46.0%, 1: 54.0%
+Obtained reward of 0.16866666666666666 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 50.0%, 3: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 50.0%, 3: 50.0%
+Finetuning classifier
+Obtained reward of 0.16555555555555557 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 25.0%, 3: 25.0%, 4: 25.0%, 5: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 25.0%, 3: 25.0%, 4: 25.0%, 5: 25.0%
+Finetuning classifier
+Obtained reward of 0.2341111111111111 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%, 6: 16.7%, 7: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%, 6: 16.7%, 7: 16.7%
+Finetuning classifier
+Obtained reward of 0.28344444444444444 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%, 8: 12.5%, 9: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%, 8: 12.5%, 9: 12.5%
+Finetuning classifier
+Obtained reward of 0.3562222222222222 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16877777777777778 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2836666666666667 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3244444444444444 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.35655555555555557 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.4298888888888889 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16955555555555554 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2728888888888889 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3482222222222222 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.37322222222222223 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.4748888888888889 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16733333333333333 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2776666666666667 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3323333333333333 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.38266666666666665 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.45544444444444443 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16822222222222222 at end of episode.
+Progressing to stage 1 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 25.0%, 1: 25.0%, 2: 25.0%, 3: 25.0%
+Finetuning classifier
+Obtained reward of 0.2823333333333333 at end of episode.
+Progressing to stage 2 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 16.7%, 1: 16.7%, 2: 16.7%, 3: 16.7%, 4: 16.7%, 5: 16.7%
+Finetuning classifier
+Obtained reward of 0.3403333333333333 at end of episode.
+Progressing to stage 3 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 12.5%, 1: 12.5%, 2: 12.5%, 3: 12.5%, 4: 12.5%, 5: 12.5%, 6: 12.5%, 7: 12.5%
+Finetuning classifier
+Obtained reward of 0.39166666666666666 at end of episode.
+Progressing to stage 4 of 5
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 10.0%, 1: 10.0%, 2: 10.0%, 3: 10.0%, 4: 10.0%, 5: 10.0%, 6: 10.0%, 7: 10.0%, 8: 10.0%, 9: 10.0%
+Finetuning classifier
+Obtained reward of 0.45655555555555555 at end of episode.
+Progressing to stage 0 of 5
+Resetting classifier and generator
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Generating samples
+Getting dummy values
+Taking images for top k dummy values
+Class distribution from generated (selected) ⇒ 0: 50.0%, 1: 50.0%
+Finetuning classifier
+Obtained reward of 0.16777777777777778 at end of episode.
+Approach              	Accuracy (CL)	Accuracy (non-CL)	Mean accuracy	SEM (mean)
+Metacontroller        	        0.307	            0.411	        0.359	     0.010
+Memory replay only    	        0.171	            0.411	        0.291	     0.003
+Generative replay only	        0.307	            0.355	        0.331	     0.011

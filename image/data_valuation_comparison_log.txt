@@ -1,0 +1,17 @@
+Loaded cached data valuation results from /Users/eleanorspens/PycharmProjects/rl-with-metacognitive-actions/image/logs/data_valuation_results.json
+
+Replay regime evaluations:
+  Scenario: buffer
+    MMR=on, Shapley=on: mean=0.4376, std=0.0205, sem=0.0065, n=10
+    MMR=on, Shapley=off: mean=0.3778, std=0.0338, sem=0.0107, n=10
+    MMR=off, Shapley=on: mean=0.3760, std=0.0336, sem=0.0106, n=10
+    MMR=off, Shapley=off: mean=0.3068, std=0.0532, sem=0.0168, n=10
+    Most challenging: mean=0.1448, std=0.0443, sem=0.0140, n=10
+    Least challenging: mean=0.3640, std=0.0296, sem=0.0093, n=10
+  Scenario: generated
+    MMR=on, Shapley=on: mean=0.3728, std=0.0221, sem=0.0070, n=10
+    MMR=on, Shapley=off: mean=0.2732, std=0.0572, sem=0.0181, n=10
+    MMR=off, Shapley=on: mean=0.3199, std=0.0324, sem=0.0103, n=10
+    MMR=off, Shapley=off: mean=0.2896, std=0.0395, sem=0.0125, n=10
+    Most challenging: mean=0.2999, std=0.0292, sem=0.0092, n=10
+    Least challenging: mean=0.2999, std=0.0292, sem=0.0092, n=10

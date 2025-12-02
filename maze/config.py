@@ -12,7 +12,7 @@ class Config:
     RESET_INTERVAL = 3             # reset maze every RESET_INTERVAL if CONSTANT_EP_LENGTH is True
     P_CHANGE = 0.1                 # otherwise, reset maze with prob P_CHANGE at each step
     INITIAL_TRAINING_STEPS = 0 # steps to train with normal .learn() at episode start
-    WORLD_MODEL_TYPE = 'debug'        # 'nn' (neural net), 'cache' (tabular replay), 'debug' (cache with full coverage)
+    WORLD_MODEL_TYPE = 'cache'        # 'nn' (neural net), 'cache' (tabular replay), 'debug' (cache with full coverage)
 
     # Shared agent exploration/discount (used by DQN and valuation helpers)
     Q_DISCOUNT = 0.95
@@ -23,10 +23,10 @@ class Config:
 
     # Data valuation parameters
     VALUATION_TYPE = 'approx_shapley' #'shapley'      # start-goal values use Shapley estimation
-    MINI_TRAIN_STEPS = 1000 #2000         # number of training steps for getting real values
+    MINI_TRAIN_STEPS = 1000         # number of training steps for getting real values
     SG_TRAIN_EPOCHS = 200          # epochs to train the start-goal value estimator
     SG_ESTIMATOR_MODEL = 'forest_with_history'     # 'knn', 'linear', 'forest', or 'forest_with_history'
-    SG_FOREST_TREES = 300          # Used when SG_ESTIMATOR_MODEL='forest'
+    SG_FOREST_TREES = 100          # Used when SG_ESTIMATOR_MODEL='forest'
     INCLUDE_IMPOSSIBLE_GOALS = False  # when True, candidate set includes blocked goal cells
     SG_HISTORY_MIN_NEW_FRACTION = 0.25  # Minimum fraction of weight assigned to latest Shapley batch
     MODE = 'top_with_mmr'         # options: top_with_mmr, bottom_with_mmr, top, bottom, longest_paths, or random

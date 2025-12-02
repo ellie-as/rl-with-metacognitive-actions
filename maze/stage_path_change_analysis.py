@@ -854,17 +854,25 @@ def plot_value_by_manhattan(distance_results: Sequence[Dict[str, object]], outpu
     print(f"Saved Manhattan-distance plot to {output} and {pdf_output}")
 
 
-def plot_combined(results: Sequence[Dict[str, float]], length_results: Sequence[Dict[str, object]], output: str) -> None:
-    if len(results) < 2 or len(length_results) < 2:
-        print("Skipping combined plot: need at least two stages with both summaries and length stats.")
+def plot_combined(
+    results: Sequence[Dict[str, float]],
+    manhattan_results: Sequence[Dict[str, object]],
+    output: str,
+) -> None:
+    """Create a four-panel summary figure:
+    - Left two panels: changed vs unchanged bar plots for the first two stages.
+    - Right two panels: value vs Manhattan distance curves for the same stages.
+    """
+    if len(results) < 2 or len(manhattan_results) < 2:
+        print("Skipping combined plot: need at least two stages with both summaries and Manhattan stats.")
         return
 
     used_results = list(results[:2])
-    used_length_results = list(length_results[:2])
-    if len(results) > 2 or len(length_results) > 2:
+    used_manhattan_results = list(manhattan_results[:2])
+    if len(results) > 2 or len(manhattan_results) > 2:
         print("Combined plot uses the first two stages; additional stages are omitted.")
 
-    cols = len(used_results) + len(used_length_results)
+    cols = len(used_results) + len(used_manhattan_results)
     fig, axes = plt.subplots(1, cols, figsize=(3.4 * cols, 3.0))
     axes_list = list(np.asarray(axes).reshape(-1))
 
@@ -872,8 +880,19 @@ def plot_combined(results: Sequence[Dict[str, float]], length_results: Sequence[
         _plot_changed_vs_unchanged(axes_list[idx], res, show_ylabel=(idx == 0))
 
     offset = len(used_results)
-    for idx, res in enumerate(used_length_results):
-        _plot_length_curve(axes_list[offset + idx], res, show_ylabel=(idx == 0))
+    for idx, res in enumerate(used_manhattan_results):
+        # Adapt Manhattan stats to the structure expected by _plot_length_curve
+        transformed = {
+            "stage": res.get("stage"),
+            "stage_label": res.get("stage_label"),
+            "per_length": res.get("per_distance", {}),
+        }
+        _plot_length_curve(
+            axes_list[offset + idx],
+            transformed,
+            show_ylabel=(idx == 0),
+            xlabel="Manhattan distance",
+        )
 
     fig.tight_layout()
     os.makedirs(os.path.dirname(output), exist_ok=True)
@@ -1068,11 +1087,11 @@ def main() -> None:
     if length_results:
         length_path = os.path.abspath(args.length_output)
         plot_value_by_length(length_results, length_path)
-        combined_path = os.path.abspath(args.combined_output)
-        plot_combined(results, length_results, combined_path)
     if manhattan_results:
         manhattan_path = os.path.abspath(args.manhattan_output)
         plot_value_by_manhattan(manhattan_results, manhattan_path)
+        combined_path = os.path.abspath(args.combined_output)
+        plot_combined(results, manhattan_results, combined_path)
 
 
 if __name__ == "__main__":

@@ -384,6 +384,7 @@ def create_action_probability_plot(regime: str) -> bool:
 
         ax.set_title(f"Step {step} in episode")
         ax.set_xlabel("Training episode")
+        ax.set_xlim(0, 5000)
 
     axes[0].set_ylabel("Probability")
     if len(axes) > 1:
@@ -434,7 +435,7 @@ if __name__ == "__main__":
         raise SystemExit(0)
 
     timesteps_for_regime = {
-        "cl": 20000,
+        "cl": 10000,
         "non_cl": 2000,
     }
     generated = []
