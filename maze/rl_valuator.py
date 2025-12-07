@@ -1,3 +1,4 @@
+import os
 import random
 import numpy as np
 import torch
@@ -623,6 +624,68 @@ def plot_start_goal_statistics(all_pairs,
     #     plt.show(block=False)
 
 
+def load_warm_start_data(cache_dir: str, mode: str = "top_with_mmr", include_stages: bool = True):
+    """
+    Load historical Shapley data from cache for warm-starting the value estimator.
+    
+    Args:
+        cache_dir: Path to valuation cache directory
+        mode: Which mode files to load (e.g., "top_with_mmr")
+        include_stages: If True, also load stage files for more data
+    
+    Returns:
+        Tuple of (pairs, z_scored_values) or ([], []) if no data found
+    """
+    import glob
+    import re
+    import json
+    
+    all_pairs = []
+    all_values = []
+    
+    if not os.path.isdir(cache_dir):
+        return [], []
+    
+    # Find files
+    if include_stages:
+        pattern = os.path.join(cache_dir, f"seed_*_{mode}*.json")
+    else:
+        pattern = os.path.join(cache_dir, f"seed_*_{mode}.json")
+    
+    files = glob.glob(pattern)
+    if not files:
+        return [], []
+    
+    for filepath in files:
+        try:
+            with open(filepath) as f:
+                data = json.load(f)
+            
+            sampled = data.get("sampled_pairs", [])
+            values = data.get("sampled_pair_values", [])
+            
+            if sampled and values and len(sampled) == len(values):
+                values_arr = np.array(values, dtype=float)
+                
+                # Robust normalize within this file (median + MAD)
+                if len(values_arr) > 1:
+                    median_v = np.median(values_arr)
+                    mad_v = np.median(np.abs(values_arr - median_v))
+                    # Scale MAD to be comparable to std (for normal dist, MAD ≈ 0.6745 * std)
+                    mad_scaled = mad_v * 1.4826 if mad_v > 1e-8 else 1.0
+                    if mad_scaled > 1e-8:
+                        values_arr = (values_arr - median_v) / mad_scaled
+                    else:
+                        values_arr = values_arr - median_v
+                
+                all_pairs.extend([tuple(p) for p in sampled])
+                all_values.extend(values_arr.tolist())
+        except Exception:
+            continue
+    
+    return all_pairs, all_values
+
+
 class StartGoalValueEstimator:
     """
     A model to predict the value (loss decrease) for any start-goal pair.
@@ -637,6 +700,7 @@ class StartGoalValueEstimator:
         self.history_pairs = []
         self.history_values = []
         self.history_weights = []
+        self._warm_started = False
         if self.simple:
             if self.model_type == "linear":
                 self.model = LinearRegression()
@@ -662,6 +726,29 @@ class StartGoalValueEstimator:
             self.optimizer = optim.Adam(self.model.parameters(), lr=0.001)
             self.loss_fn = torch.nn.MSELoss()
 
+    def warm_start(self, pairs, values, weight: float = 0.5):
+        """
+        Warm-start the estimator with historical data.
+        
+        Args:
+            pairs: List of (start, goal) tuples
+            values: List of z-scored values (should be normalized per-source before calling)
+            weight: Weight to assign to warm-start data (default 0.5)
+        """
+        if not pairs or not values:
+            return
+        
+        if self.model_type not in {"forest", "forest_with_history"}:
+            print(f"Warm-start only supported for forest models, not {self.model_type}")
+            return
+        
+        self.history_pairs.extend([tuple(p) for p in pairs])
+        self.history_values.extend([float(v) for v in values])
+        self.history_weights.extend([weight] * len(pairs))
+        self._warm_started = True
+        
+        print(f"Warm-started estimator with {len(pairs)} historical pairs (weight={weight})")
+    
     def _pairs_to_features(self, start_goal_pairs):
         feats = []
         for s, g in start_goal_pairs:

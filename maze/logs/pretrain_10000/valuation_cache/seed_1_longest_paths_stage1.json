@@ -5,7 +5,7 @@
   "initial_training_steps": 10000,
   "lambda_param": 0.9,
   "episodes_per_burst": 200,
-  "timestamp": "2025-12-01T14:26:32.145155Z",
+  "timestamp": "2025-12-06T01:43:37.334222Z",
   "all_pairs": [
     [
       1,
@@ -3696,7 +3696,7 @@
   "sampled_pair_values": [],
   "val_history": [
     0.034299999999999976,
-    0.11929999999999996
+    0.11889999999999996
   ],
   "val_success_history": [
     0.23,

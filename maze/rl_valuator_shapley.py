@@ -1,7 +1,6 @@
 import random
 import numpy as np
 import torch
-import copy
 import gc
 from environment import DreamEnv
 from rl_valuator import compute_validation_reward
@@ -54,116 +53,139 @@ def compute_start_goal_shapley_value(
         allowed_pairs=eval_pairs if eval_pairs else None
     )
 
-    shapley_values = []
-    for _ in range(num_permutations):
-        # 1) sample a random permutation and split at target_pair
-        perm = candidate_pairs.copy()
-        random.shuffle(perm)
-        prefix = []
-        for p in perm:
-            if p == target_pair:
-                break
-            prefix.append(p)
+    # Snapshot base agent parameters and original environment so we can
+    # “clone” by resetting weights instead of using deepcopy (which may
+    # fail for non-picklable SB3 internals).
+    base_params = None
+    if hasattr(base_agent, "get_parameters"):
+        base_params = base_agent.get_parameters()
+    original_env = None
+    if hasattr(base_agent, "get_env"):
+        try:
+            original_env = base_agent.get_env()
+        except Exception:
+            original_env = None
 
-        # 2) build two dream environments
-        env_with = DreamEnv(
-            world_model=dream_env.world_model,
-            obs_dim=dream_env.obs_dim,
-            action_dim=dream_env.action_dim,
-            allowed_pairs=prefix + [target_pair]
-        )
-        env_without = None
-        if prefix:
-            env_without = DreamEnv(
+    shapley_values = []
+    try:
+        for _ in range(num_permutations):
+            # 1) sample a random permutation and split at target_pair
+            perm = candidate_pairs.copy()
+            random.shuffle(perm)
+            prefix = []
+            for p in perm:
+                if p == target_pair:
+                    break
+                prefix.append(p)
+
+            # 2) build dream environments for with / without target_pair
+            env_with = DreamEnv(
                 world_model=dream_env.world_model,
                 obs_dim=dream_env.obs_dim,
                 action_dim=dream_env.action_dim,
-                allowed_pairs=prefix
+                allowed_pairs=prefix + [target_pair],
             )
+            env_without = None
+            if prefix:
+                env_without = DreamEnv(
+                    world_model=dream_env.world_model,
+                    obs_dim=dream_env.obs_dim,
+                    action_dim=dream_env.action_dim,
+                    allowed_pairs=prefix,
+                )
 
-        # 3) train & evaluate without target_pair
-        agent_without = None
-        agent_with = None
-        perf_without = 0.0
-        perf_with = 0.0
-        try:
-            agent_without = copy.deepcopy(base_agent)
+            # 3) train & evaluate without target_pair
+            perf_without = 0.0
+            if base_params is not None and hasattr(base_agent, "set_parameters"):
+                base_agent.set_parameters(base_params)
+            if hasattr(base_agent, "clear_replay_buffer"):
+                try:
+                    base_agent.clear_replay_buffer()
+                except Exception:
+                    pass
             if env_without is not None:
-                agent_without.set_env(env_without)
-                agent_without.learn(total_timesteps=mini_train_steps)
-            agent_without.set_env(eval_env)
+                base_agent.set_env(env_without)
+                base_agent.learn(total_timesteps=mini_train_steps)
+            base_agent.set_env(eval_env)
             perf_without = compute_validation_reward(
-                agent_without,
+                base_agent,
                 eval_env,
                 episodes=num_episodes,
-                max_steps=25
+                max_steps=25,
             )
 
             # 4) train & evaluate with target_pair
-            agent_with = copy.deepcopy(base_agent)
-            agent_with.set_env(env_with)
-            agent_with.learn(total_timesteps=mini_train_steps)
-            agent_with.set_env(eval_env)
-            perf_with = compute_validation_reward(
-                agent_with,
-                eval_env,
-                episodes=num_episodes,
-                max_steps=25
-            )
-        finally:
-            for agent_ref in (agent_without, agent_with):
-                if agent_ref is None:
-                    continue
+            if base_params is not None and hasattr(base_agent, "set_parameters"):
+                base_agent.set_parameters(base_params)
+            if hasattr(base_agent, "clear_replay_buffer"):
                 try:
-                    if hasattr(agent_ref, "clear_replay_buffer"):
-                        agent_ref.clear_replay_buffer()
-                    agent_ref.set_env(None)
+                    base_agent.clear_replay_buffer()
                 except Exception:
                     pass
-            agent_without = None
-            agent_with = None
-            gc.collect()
+            base_agent.set_env(env_with)
+            base_agent.learn(total_timesteps=mini_train_steps)
+            base_agent.set_env(eval_env)
+            perf_with = compute_validation_reward(
+                base_agent,
+                eval_env,
+                episodes=num_episodes,
+                max_steps=25,
+            )
 
-        # 5) record marginal contribution
-        shapley_values.append(perf_with - perf_without)
+            # 5) record marginal contribution
+            shapley_values.append(perf_with - perf_without)
 
-    # Collect one sample trajectory for analysis
-    single_pair_env = DreamEnv(
-        world_model=dream_env.world_model,
-        obs_dim=dream_env.obs_dim,
-        action_dim=dream_env.action_dim,
-        allowed_pairs=[target_pair]
-    )
-    trajectories = []
-    temp_agent = None
-    try:
-        temp_agent = copy.deepcopy(base_agent)
-        temp_agent.set_env(single_pair_env)
+        # Collect one sample trajectory for analysis
+        single_pair_env = DreamEnv(
+            world_model=dream_env.world_model,
+            obs_dim=dream_env.obs_dim,
+            action_dim=dream_env.action_dim,
+            allowed_pairs=[target_pair],
+        )
+        trajectories = []
+
+        # Roll out using the base agent with reset parameters
+        if base_params is not None and hasattr(base_agent, "set_parameters"):
+            base_agent.set_parameters(base_params)
+        if hasattr(base_agent, "clear_replay_buffer"):
+            try:
+                base_agent.clear_replay_buffer()
+            except Exception:
+                pass
+        base_agent.set_env(single_pair_env)
 
         obs, _ = single_pair_env.reset()
         done = False
         step_count = 0
         episode = []
         while not done and step_count < single_pair_env.max_steps:
-            action, _ = temp_agent.predict(obs, deterministic=False)
+            action, _ = base_agent.predict(obs, deterministic=False)
             next_obs, reward, done, _, info = single_pair_env.step(action)
             episode.append((obs, action, reward, next_obs, done, info))
             obs = next_obs
             step_count += 1
         trajectories.append(episode)
+
+        # Return mean Shapley and the trajectory
+        return np.mean(shapley_values), trajectories
     finally:
-        if temp_agent is not None:
+        # Restore base agent to its original state as best we can.
+        if base_params is not None and hasattr(base_agent, "set_parameters"):
             try:
-                if hasattr(temp_agent, "clear_replay_buffer"):
-                    temp_agent.clear_replay_buffer()
-                temp_agent.set_env(None)
+                base_agent.set_parameters(base_params)
             except Exception:
                 pass
-        temp_agent = None
+        if hasattr(base_agent, "clear_replay_buffer"):
+            try:
+                base_agent.clear_replay_buffer()
+            except Exception:
+                pass
+        if hasattr(base_agent, "set_env"):
+            try:
+                base_agent.set_env(original_env)
+            except Exception:
+                pass
         gc.collect()
-
-    # Return mean Shapley and the trajectory
-    return np.mean(shapley_values), trajectories
 
 
 def compute_start_goal_shapley_value_approx_all(
@@ -285,8 +307,12 @@ def compute_start_goal_direct_impact(
     free_cells=None,
 ):
     """
-    Direct impact baseline: train agent on target_pair alone and measure validation improvement.
+    Leave-one-out style direct impact:
+      v(S) - v(S \\ {target_pair}),
+    where S is the current candidate_pairs set and v(·) is the validation
+    performance after training on the corresponding DreamEnv.
     """
+    # Build evaluation environment (same structure as in Shapley helper).
     grid_size = dream_env.grid_size
     if free_cells:
         free_cells = [int(c) for c in free_cells]
@@ -300,79 +326,121 @@ def compute_start_goal_direct_impact(
         world_model=dream_env.world_model,
         obs_dim=dream_env.obs_dim,
         action_dim=dream_env.action_dim,
-        allowed_pairs=eval_pairs if eval_pairs else None
+        allowed_pairs=eval_pairs if eval_pairs else None,
     )
 
-    single_pair_env = DreamEnv(
+    # Coalition S and S \\ {target_pair}
+    coalition = list(candidate_pairs or [])
+    if target_pair not in coalition:
+        coalition.append(target_pair)
+    coalition_without = [p for p in coalition if p != target_pair]
+
+    env_with = DreamEnv(
         world_model=dream_env.world_model,
         obs_dim=dream_env.obs_dim,
         action_dim=dream_env.action_dim,
-        allowed_pairs=[target_pair]
+        allowed_pairs=coalition,
+    )
+    env_without = DreamEnv(
+        world_model=dream_env.world_model,
+        obs_dim=dream_env.obs_dim,
+        action_dim=dream_env.action_dim,
+        allowed_pairs=coalition_without or None,
     )
 
-    agent_raw = None
-    agent_trained = None
-    perf_before = 0.0
-    perf_after = 0.0
-    try:
-        agent_raw = copy.deepcopy(base_agent)
-        agent_raw.set_env(eval_env)
-        perf_before = compute_validation_reward(
-            agent_raw,
-            eval_env,
-            episodes=num_episodes,
-            max_steps=25
-        )
+    # Snapshot base parameters and original environment.
+    base_params = None
+    if hasattr(base_agent, "get_parameters"):
+        base_params = base_agent.get_parameters()
+    original_env = None
+    if hasattr(base_agent, "get_env"):
+        try:
+            original_env = base_agent.get_env()
+        except Exception:
+            original_env = None
 
-        agent_trained = copy.deepcopy(base_agent)
-        agent_trained.set_env(single_pair_env)
-        agent_trained.learn(total_timesteps=mini_train_steps)
-        agent_trained.set_env(eval_env)
-        perf_after = compute_validation_reward(
-            agent_trained,
-            eval_env,
-            episodes=num_episodes,
-            max_steps=25
-        )
-    finally:
-        for agent_ref in (agent_raw, agent_trained):
-            if agent_ref is None:
-                continue
+    try:
+        # v(S \\ {i})
+        if base_params is not None and hasattr(base_agent, "set_parameters"):
+            base_agent.set_parameters(base_params)
+        if hasattr(base_agent, "clear_replay_buffer"):
             try:
-                if hasattr(agent_ref, "clear_replay_buffer"):
-                    agent_ref.clear_replay_buffer()
-                agent_ref.set_env(None)
+                base_agent.clear_replay_buffer()
             except Exception:
                 pass
-        agent_raw = None
-        agent_trained = None
-        gc.collect()
+        if coalition_without:
+            base_agent.set_env(env_without)
+            base_agent.learn(total_timesteps=mini_train_steps)
+        base_agent.set_env(eval_env)
+        perf_without = compute_validation_reward(
+            base_agent,
+            eval_env,
+            episodes=num_episodes,
+            max_steps=25,
+        )
 
-    trajectories = []
-    temp_agent = None
-    try:
-        temp_agent = copy.deepcopy(base_agent)
-        temp_agent.set_env(single_pair_env)
+        # v(S)
+        if base_params is not None and hasattr(base_agent, "set_parameters"):
+            base_agent.set_parameters(base_params)
+        if hasattr(base_agent, "clear_replay_buffer"):
+            try:
+                base_agent.clear_replay_buffer()
+            except Exception:
+                pass
+        base_agent.set_env(env_with)
+        base_agent.learn(total_timesteps=mini_train_steps)
+        base_agent.set_env(eval_env)
+        perf_with = compute_validation_reward(
+            base_agent,
+            eval_env,
+            episodes=num_episodes,
+            max_steps=25,
+        )
+
+        # Collect a diagnostic trajectory on the target_pair alone.
+        single_pair_env = DreamEnv(
+            world_model=dream_env.world_model,
+            obs_dim=dream_env.obs_dim,
+            action_dim=dream_env.action_dim,
+            allowed_pairs=[target_pair],
+        )
+        trajectories = []
+
+        if base_params is not None and hasattr(base_agent, "set_parameters"):
+            base_agent.set_parameters(base_params)
+        if hasattr(base_agent, "clear_replay_buffer"):
+            try:
+                base_agent.clear_replay_buffer()
+            except Exception:
+                pass
+        base_agent.set_env(single_pair_env)
         obs, _ = single_pair_env.reset()
         done = False
         step_count = 0
         episode = []
         while not done and step_count < single_pair_env.max_steps:
-            action, _ = temp_agent.predict(obs, deterministic=False)
+            action, _ = base_agent.predict(obs, deterministic=False)
             next_obs, reward, done, _, info = single_pair_env.step(action)
             episode.append((obs, action, reward, next_obs, done, info))
             obs = next_obs
             step_count += 1
         trajectories.append(episode)
+
+        return perf_with - perf_without, trajectories
     finally:
-        if temp_agent is not None:
+        if base_params is not None and hasattr(base_agent, "set_parameters"):
             try:
-                if hasattr(temp_agent, "clear_replay_buffer"):
-                    temp_agent.clear_replay_buffer()
-                temp_agent.set_env(None)
+                base_agent.set_parameters(base_params)
             except Exception:
                 pass
-        temp_agent = None
+        if hasattr(base_agent, "clear_replay_buffer"):
+            try:
+                base_agent.clear_replay_buffer()
+            except Exception:
+                pass
+        if hasattr(base_agent, "set_env"):
+            try:
+                base_agent.set_env(original_env)
+            except Exception:
+                pass
         gc.collect()
-
-    return perf_after - perf_before, trajectories

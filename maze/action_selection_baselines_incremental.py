@@ -130,7 +130,7 @@ def run_sequence(
     return_success: bool = False,
 ) -> Any:
     if seed is None:
-        seed = 1
+        seed = 123
     seed_all(seed)
 
     if initial_steps is None:
@@ -248,9 +248,8 @@ def parse_args():
 
 def main():
     args = parse_args()
-    # Common settings
-    # Use the fully-covered debug world model so dream-environment training has reliable transitions.
-    setattr(Config, "WORLD_MODEL_TYPE", "cache")
+
+    setattr(Config, "WORLD_MODEL_TYPE", "debug")
     setattr(Config, "SEED", 1)
     seeds = [int(Config.SEED) + i for i in range(max(1, int(args.num_seeds)))]
     learned_like = [2, 1, 1]

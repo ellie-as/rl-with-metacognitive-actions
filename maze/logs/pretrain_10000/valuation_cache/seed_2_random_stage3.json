@@ -5,7 +5,7 @@
   "initial_training_steps": 10000,
   "lambda_param": 0.9,
   "episodes_per_burst": 200,
-  "timestamp": "2025-12-01T14:17:19.596034Z",
+  "timestamp": "2025-12-06T01:12:54.429236Z",
   "all_pairs": [
     [
       0,
@@ -3119,17 +3119,17 @@
   "sampled_pair_values": [],
   "val_history": [
     -0.03910000000000003,
-    0.1318,
-    0.3281,
-    0.24309999999999998,
-    0.8185000000000001
+    0.1911,
+    0.35259999999999997,
+    0.2183,
+    0.7835
   ],
   "val_success_history": [
     0.17,
-    0.31,
-    0.47,
-    0.4,
-    0.88
+    0.36,
+    0.49,
+    0.38,
+    0.85
   ],
   "success_history": [],
   "pre_incremental_maze": [

@@ -22,13 +22,15 @@ class Config:
     FIX_EPSILON = True        # when True, keep exploration epsilon fixed at Q_EPSILON
 
     # Data valuation parameters
-    VALUATION_TYPE = 'approx_shapley' #'shapley'      # start-goal values use Shapley estimation
+    VALUATION_TYPE = 'approx_shapley' 
     MINI_TRAIN_STEPS = 1000         # number of training steps for getting real values
     SG_TRAIN_EPOCHS = 200          # epochs to train the start-goal value estimator
     SG_ESTIMATOR_MODEL = 'forest_with_history'     # 'knn', 'linear', 'forest', or 'forest_with_history'
     SG_FOREST_TREES = 100          # Used when SG_ESTIMATOR_MODEL='forest'
     INCLUDE_IMPOSSIBLE_GOALS = False  # when True, candidate set includes blocked goal cells
     SG_HISTORY_MIN_NEW_FRACTION = 0.25  # Minimum fraction of weight assigned to latest Shapley batch
+    SG_WARM_START = False                # Warm-start value estimator from cached historical data
+    SG_WARM_START_WEIGHT = 1.0          # Weight for warm-start data (vs 1.0 for new data)
     MODE = 'top_with_mmr'         # options: top_with_mmr, bottom_with_mmr, top, bottom, longest_paths, or random
     LAMBDA_PARAM = 0.9 
     NUM_PERMUTATIONS = 10          # permutations used for Shapley estimation

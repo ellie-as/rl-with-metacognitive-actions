@@ -740,6 +740,15 @@ class MetaEnv(gym.Env):
                         self.sg_value_estimator = StartGoalValueEstimator(grid_size, simple=False)
                     else:
                         self.sg_value_estimator = StartGoalValueEstimator(grid_size, simple=True, model_type=estimator_model)
+                    
+                    # Warm-start from cached historical data if enabled
+                    if getattr(Config, "SG_WARM_START", False):
+                        from rl_valuator import load_warm_start_data
+                        cache_dir = os.path.join(os.path.dirname(__file__), "logs/pretrain_10000/warm_start_cache")
+                        warm_pairs, warm_values = load_warm_start_data(cache_dir, mode="top_with_mmr", include_stages=True)
+                        if warm_pairs:
+                            warm_weight = float(getattr(Config, "SG_WARM_START_WEIGHT", 0.5))
+                            self.sg_value_estimator.warm_start(warm_pairs, warm_values, weight=warm_weight)
 
                 print(pair_values[:20])
                 print("Training start-goal value estimator...")
