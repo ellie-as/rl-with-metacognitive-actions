@@ -228,6 +228,7 @@ def collect_stage_stats(
     mode: str,
     stage: int,
     radius: int,
+    path_length: int | None = None,
 ) -> Dict[str, np.ndarray]:
     changed_vals: List[float] = []
     unchanged_vals: List[float] = []
@@ -242,8 +243,12 @@ def collect_stage_stats(
         grid = int(pre.shape[0])
         pairs = data["all_pairs"]
         values = data["all_pair_values"]
-        total_sum += float(np.sum(values))
-        total_count += len(values)
+        # For the unfiltered case, treat all values as contributing to the global mean.
+        # When a specific path_length is requested, we instead accumulate the global
+        # mean over only those pairs that satisfy the length constraint (see below).
+        if path_length is None:
+            total_sum += float(np.sum(values))
+            total_count += len(values)
 
         # Identify changed cells (both added and removed)
         changed_cells = [(r, c) for r in range(grid) for c in range(grid) if pre[r, c] != post[r, c]]
@@ -252,6 +257,16 @@ def collect_stage_stats(
         val_cnt = np.zeros((grid, grid), dtype=float)
 
         for (s, g), val in zip(pairs, values):
+            # Optionally restrict to a specific shortest-path length in the *post* maze
+            # so that near/far comparisons are not confounded by path-length differences.
+            if path_length is not None:
+                pl = shortest_path_length(post, s, g)
+                if pl is None or pl != path_length:
+                    continue
+                # For the filtered case, build the global mean from the same subset.
+                total_sum += float(val)
+                total_count += 1.0
+
             prev_paths = all_shortest_paths(pre, grid, s, g)
             post_paths = all_shortest_paths(post, grid, s, g)
             mean_dist = mean_jaccard(prev_paths, post_paths)
@@ -435,6 +450,8 @@ def summarise(stats_dict: Dict[str, np.ndarray]) -> Dict[str, float]:
         "p_value": float(p_val),
         "near_diff": near_diff,
         "far_diff": far_diff,
+        "near_mean": near_mean,
+        "far_mean": far_mean,
         "near_sem": near_sem,
         "far_sem": far_sem,
         "near_count": int(near.size),
@@ -719,7 +736,8 @@ def plot_near_far(results: Sequence[Dict[str, float]], output: str) -> None:
         return
 
     cols = len(results)
-    fig, axes = plt.subplots(1, cols, figsize=(3.4 * cols, 2.9), sharey=cols > 1)
+    # Use a narrower figure than the main bar plots to keep the near/far panel compact.
+    fig, axes = plt.subplots(1, cols, figsize=(1.7 * cols, 2.9), sharey=cols > 1)
     if not isinstance(axes, np.ndarray):
         axes_list = [axes]
     else:
@@ -736,7 +754,8 @@ def plot_near_far(results: Sequence[Dict[str, float]], output: str) -> None:
             ax.set_axis_off()
             continue
 
-        means = [res["near_diff"], res["far_diff"]]
+        # Plot raw mean values for near/far cells (no global-mean subtraction)
+        means = [res["near_mean"], res["far_mean"]]
         sems = [res["near_sem"], res["far_sem"]]
         labels = ["Near", "Far"]
         x = np.arange(len(labels))
@@ -747,7 +766,7 @@ def plot_near_far(results: Sequence[Dict[str, float]], output: str) -> None:
         ax.set_xticklabels(labels)
         ax.set_title(stage_name)
         if idx == 0:
-            ax.set_ylabel("Mean value − global mean")
+            ax.set_ylabel("Mean value")
         ax.axhline(0.0, color="black", linewidth=1)
         valid_extents = [
             (
@@ -758,26 +777,27 @@ def plot_near_far(results: Sequence[Dict[str, float]], output: str) -> None:
         ]
         finite_bottoms = [lo for lo, hi in valid_extents if np.isfinite(lo)]
         finite_tops = [hi for lo, hi in valid_extents if np.isfinite(hi)]
-        if finite_bottoms and finite_tops:
-            ymin = min(finite_bottoms + [0.0])
-            ymax = max(finite_tops + [0.0])
-        else:
-            ymin, ymax = -1.0, 1.0
-        ymax = max(ymax, 0.0)
-        ymin = min(ymin, 0.0)
-        vertical_span = ymax - ymin if ymax > ymin else 1e-3
-        increment = vertical_span * 0.25
-        yline = ymax + increment * 0.5
+        # Fix the vertical axis to [0, 7e-4] so that value=0 is the x-axis and
+        # the top of the plot is consistently 0.0007, preventing the sig label
+        # from colliding with the subplot title.
+        ymin = 0.0
+        ymax = 7e-4
+        vertical_span = ymax - ymin
+        margin = vertical_span * 0.1
+        # Place the sig line somewhat below the top limit
+        yline = ymax - margin * 1.5
+        # Slightly raise the significance bar for better visual separation
+        yline += 3e-5
         ax.text(
             0.5,
-            yline + increment * 0.15,
+            yline + margin * 0.1,
             _sig_label(res.get("p_near_far", float("nan"))),
             ha="center",
             va="bottom",
             fontsize=9,
         )
         ax.plot([0, 1], [yline, yline], color="black", linewidth=1)
-        ax.set_ylim(bottom=ymin - increment * 0.6, top=yline + increment * 0.7)
+        ax.set_ylim(bottom=ymin, top=ymax)
 
     for idx in range(len(results), len(axes_list)):
         axes_list[idx].set_axis_off()
@@ -949,8 +969,14 @@ def main() -> None:
     parser.add_argument(
         "--radius",
         type=int,
-        default=1,
-        help="Manhattan radius used to define 'near' cells.",
+        default=2,
+        help="Manhattan radius used to define 'near' cells (default: 2).",
+    )
+    parser.add_argument(
+        "--path-length",
+        type=int,
+        default=6,
+        help="Restrict near/far analysis to pairs whose shortest path in the post-update maze has this length (default: 6).",
     )
     parser.add_argument(
         "--aggregate-steps",
@@ -1001,23 +1027,44 @@ def main() -> None:
 
     stage_list = sorted(stage_list)
 
-    stage_entries: List[Dict[str, object]] = []
+    # We collect two variants of the stage statistics:
+    # - stage_entries_all: uses all pairs (no path-length filtering) and feeds the
+    #   main changed/unchanged and length/Manhattan plots.
+    # - stage_entries_near_far: optionally uses a fixed path length and is used
+    #   only for the near vs far cell analysis.
+    stage_entries_all: List[Dict[str, object]] = []
+    stage_entries_near_far: List[Dict[str, object]] = []
     for stage in stage_list:
-        stage_stats = collect_stage_stats(cache_dir, args.mode, stage, args.radius)
+        # Unfiltered stats for global / changed-vs-unchanged analysis
+        stage_stats_all = collect_stage_stats(cache_dir, args.mode, stage, args.radius, path_length=None)
         length_stats = collect_length_value_stats(cache_dir, args.mode, stage)
         manhattan_stats = collect_manhattan_value_stats(cache_dir, args.mode, stage)
-        stage_entries.append(
+        stage_entries_all.append(
             {
                 "stage": stage,
                 "stage_label": None,
-                "stats": stage_stats,
+                "stats": stage_stats_all,
                 "length": length_stats,
                 "manhattan": manhattan_stats,
             }
         )
 
+        # Optionally, a length-filtered copy used only for near/far plots
+        if args.path_length is not None:
+            stage_stats_nf = collect_stage_stats(cache_dir, args.mode, stage, args.radius, args.path_length)
+            stage_entries_near_far.append(
+                {
+                    "stage": stage,
+                    "stage_label": None,
+                    "stats": stage_stats_nf,
+                    "length": length_stats,
+                    "manhattan": manhattan_stats,
+                }
+            )
+
     if args.aggregate_steps:
-        aggregated: List[Dict[str, object]] = []
+        aggregated_all: List[Dict[str, object]] = []
+        aggregated_nf: List[Dict[str, object]] = []
 
         def _aggregate(entries: List[Dict[str, object]], label: str, stage_value: int, parity: int):
             selected = [
@@ -1038,17 +1085,28 @@ def main() -> None:
                 "manhattan": merged_manhattan,
             }
 
-        odd = _aggregate(stage_entries, "Step 1", 1, parity=1)
-        even = _aggregate(stage_entries, "Step 2", 2, parity=0)
-        if odd:
-            aggregated.append(odd)
-        if even:
-            aggregated.append(even)
-        stage_entries = aggregated
+        # Aggregate for the unfiltered stats (used for main plots)
+        odd_all = _aggregate(stage_entries_all, "Step 1", 1, parity=1)
+        even_all = _aggregate(stage_entries_all, "Step 2", 2, parity=0)
+        if odd_all:
+            aggregated_all.append(odd_all)
+        if even_all:
+            aggregated_all.append(even_all)
+        stage_entries_all = aggregated_all
+
+        # And, if present, aggregate the length-filtered stats for near/far only
+        if stage_entries_near_far:
+            odd_nf = _aggregate(stage_entries_near_far, "Step 1", 1, parity=1)
+            even_nf = _aggregate(stage_entries_near_far, "Step 2", 2, parity=0)
+            if odd_nf:
+                aggregated_nf.append(odd_nf)
+            if even_nf:
+                aggregated_nf.append(even_nf)
+            stage_entries_near_far = aggregated_nf
 
     analysis_labels = [
         _stage_label(entry["stage"], entry.get("stage_label"))  # type: ignore[arg-type]
-        for entry in stage_entries
+        for entry in stage_entries_all
     ]
     print(f"Analysing: {', '.join(analysis_labels)}")
 
@@ -1056,7 +1114,7 @@ def main() -> None:
     length_results: List[Dict[str, object]] = []
     manhattan_results: List[Dict[str, object]] = []
 
-    for entry in stage_entries:
+    for entry in stage_entries_all:
         summary = summarise(entry["stats"])  # type: ignore[arg-type]
         results.append(summary)
 
@@ -1083,7 +1141,13 @@ def main() -> None:
 
     plot_results(results, os.path.abspath(args.output))
     near_far_output = os.path.splitext(os.path.abspath(args.output))[0] + "_near_far.png"
-    plot_near_far(results, os.path.abspath(near_far_output))
+    # For near/far, prefer the optional length-filtered stats if provided;
+    # otherwise, fall back to the unfiltered summaries.
+    if stage_entries_near_far:
+        nf_results = [summarise(entry["stats"]) for entry in stage_entries_near_far]  # type: ignore[arg-type]
+        plot_near_far(nf_results, os.path.abspath(near_far_output))
+    else:
+        plot_near_far(results, os.path.abspath(near_far_output))
     if length_results:
         length_path = os.path.abspath(args.length_output)
         plot_value_by_length(length_results, length_path)
