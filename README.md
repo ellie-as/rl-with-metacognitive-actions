@@ -39,7 +39,7 @@ To reproduce the paper's figures:
 * Open `./image/Main experiment.ipynb` and run all cells.  
   This:
   - trains the meta‑controller on Fashion‑MNIST (`experiment.py`) and produces the action‑probability / reward‑over‑time plots used for Figure 2a–b (see `./image/actions over time non cl.png`, `./image/actions over time cl.png`, and related files in `./image/plots/`),  
-  - runs the baselines and data‑valuation comparison experiments, generating plots such as `dvn_vs_random_buffer.png` and `dvn_vs_random_generated.png` (Figure 2c,f), and  
+  - runs the baselines and data valuation comparison experiments, generating plots such as `dvn_vs_random_buffer.png` and `dvn_vs_random_generated.png` (Figure 2c,f), and  
   - runs the data‑value‑vs‑novelty analysis, producing correlation plots such as `pearson_r_by_stage_distance_buffer.png` and `pearson_r_by_stage_distance_gen.png` in `./image/plots/` (Figure 2d,g).
 * For MNIST results to corroborate the findings, change the dataset from FashionMNIST to MNIST in `./image/environment.py` and re‑run the notebook (or at least the cell that calls `data_value_vs_novelty.py`).
 
@@ -47,7 +47,7 @@ To reproduce the paper's figures:
 * Open `./maze/Main experiment.ipynb` and run all cells.  
   This:
   - trains the maze meta‑controller via `experiment.py` and produces the action‑probability / reward‑over‑time plot used for Figure 3a (saved as `./maze/actions over time.png`),  
-  - runs incremental action‑selection baselines for comparison, and  
+  - runs random action selection, random data selection, and longest path data selection baselines for comparison, and  
   - runs `stage_path_change_analysis.py` to generate the path‑change and value‑by‑location plots used in Figure 3 (e.g. `./maze/plots/stage_path_change_bias.png`, `./maze/plots/stage_path_length_values.png`, `./maze/plots/stage_path_value_summary.png`, `./maze/plots/stage_path_manhattan_values.png`).
 
 #### Figure 4 (graph task):
