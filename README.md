@@ -1,6 +1,6 @@
 ## Modelling the control of offline processing with reinforcement learning
 
-*Code for the accepted NeurIPS 2025 paper 'Modelling the control of offline processing with reinforcement learning'.*
+*Code for the NeurIPS 2025 paper 'Modelling the control of offline processing with reinforcement learning'.*
 
 Brains use different kinds of 'metacognitive actions' to reorganise their representations in offline learning, such as replay of hippocampal memories, consolidation of experience into a world model, and generative replay based on this world model. The result of these different processes depends on many other variables, like how well the world model captures the environment, and the novelty of recent experiences. Can a meta-controller use these 'metacognitive actions' to learn offline in the most effective way? Furthermore can the system select which experiences are most useful to replay or simulate? 
 
